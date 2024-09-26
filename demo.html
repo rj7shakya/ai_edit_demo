@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="./js/demo4.js" defer></script>
+    <link rel="stylesheet" href="./css/demo.css" />
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-gray-200 p-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-3xl font-bold">AI VIDEO EDIT</a>
+        <ul class="flex space-x-4">
+          <li><a href="./demo.html" class="text-xl font-bold">Demo1</a></li>
+          <li><a href="./demo2.html" class="text-xl font-bold">Demo2</a></li>
+          <li><a href="./demo3.html" class="text-xl font-bold">Demo3</a></li>
+          <li><a href="./demo4.html" class="text-xl font-bold">Demo4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mx-auto mt-4 p-4">
+      <h1 class="text-3xl font-bold mb-4 text-center">Demo Section</h1>
+      <div
+        id="videoContainer"
+        class="relative flex flex-col items-center justify-center"
+      >
+        <video id="videoPlayer" class="cwidth"></video>
+        <div class="flex cwidth items-center">
+          <div
+            id="customControls"
+            class="mt-2 flex items-center justify-between mr-2"
+          >
+            <button
+              class="mr-2 px-2 py-2 bg-gray-100 text-white rounded hover:bg-gray-200"
+            >
+              <img
+                id="playPauseBtn"
+                src="/assets/play.png"
+                alt=""
+                class="w-6"
+              />
+            </button>
+            <button
+              id="replayBtn"
+              class="mr-2 px-4 py-2 bg-gray-100 text-white rounded hover:bg-gray-200"
+            >
+              <img src="/assets/replay.png" alt="" class="w-6" />
+            </button>
+            <span id="currentTime" class="mr-1 text-xl">0:00</span>
+            <span class="text-xl">/ </span>
+            <span id="totalDuration" class="text-xl">0:00</span>
+          </div>
+          <div
+            id="seekBarContainer"
+            class="w-3/4 h-5 bg-gray-300 mt-2 relative cursor-pointer"
+          >
+            <div id="seekBar" class="h-full bg-green-500 w-0"></div>
+            <div
+              id="seekHandle"
+              class="w-2.5 h-5 bg-gray-800 absolute top-0 left-0 cursor-pointer"
+            ></div>
+          </div>
+        </div>
+
+        <div
+          id="wordContainerWrapper"
+          class="relative cwidth h-15 py-3 overflow-x-auto overflow-y-hidden mt-5 bg-gray-100 whitespace-nowrap"
+        >
+          <div id="wordContainer" class="inline-block py-2"></div>
+        </div>
+
+        <video class="cwidth mt-6" src="./videos/teach2.mp4" controls></video>
+      </div>
+    </main>
+  </body>
+</html>

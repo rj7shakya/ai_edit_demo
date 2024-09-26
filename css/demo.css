@@ -1,0 +1,18 @@
+.word.disabled {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.word.active {
+  background-color: yellow;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.cwidth {
+  width: 85vh;
+}
+
+.cheight {
+  height: 85vh;
+}
