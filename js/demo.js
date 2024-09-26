@@ -9,8 +9,8 @@ const seekHandle = document.getElementById("seekHandle");
 const currentTimeDisplay = document.getElementById("currentTime");
 const totalDurationDisplay = document.getElementById("totalDuration");
 
-const videoUrl = "../videos/js.mp4";
-videoPlayer.src = videoUrl;
+// const videoUrl = "../videos/js.mp4";
+// videoPlayer.src = videoUrl;
 videoPlayer.controls = false;
 
 let videoDuration = 0;
