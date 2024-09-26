@@ -252,7 +252,7 @@ videoPlayer.ontimeupdate = () => {
       videoPlayer.currentTime = parseFloat(nextSegment.dataset.start);
     } else {
       videoPlayer.pause();
-      playPauseBtn.setAttribute("src", "./assets/play.png");
+      playPauseBtn.setAttribute("src", "../assets/play.png");
     }
   }
 };
@@ -277,9 +277,9 @@ replayBtn.onclick = () => {
 };
 
 videoPlayer.onplay = () => {
-  playPauseBtn.setAttribute("src", "/assets/pause.png");
+  playPauseBtn.setAttribute("src", "../assets/pause.png");
 };
 
 videoPlayer.onpause = () => {
-  playPauseBtn.setAttribute("src", "/assets/play.png");
+  playPauseBtn.setAttribute("src", "../assets/play.png");
 };
